@@ -1,0 +1,2 @@
+# Myserial-CSV
+Arduinoなどのシリアル出力をUSBポート直読みでCSV出力できるツール。以前作っていたMyserialのオルタナティブ
