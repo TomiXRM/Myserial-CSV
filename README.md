@@ -1,6 +1,9 @@
 # About Myserial-CSV
+![img](fig/fig.png)
 
 **Arduinoなどのシリアル出力をUSBポート直読みでCSV出力できるツール。以前作っていたMyserialのオルタナティブ版**
+
+
 
 ## pipenvでの環境構築
 
