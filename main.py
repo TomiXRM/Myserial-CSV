@@ -67,9 +67,9 @@ def printAscii(Ser):
 
 
 def addCSV(list):
-    with open('CO2Data.csv', 'a', newline='') as co2Data:
-        csv.writer(co2Data, lineterminator='\n').writerow(list)
-        co2Data.close()
+    with open('data.csv', 'a', newline='') as data:
+        csv.writer(data, lineterminator='\n').writerow(list)
+        data.close()
 
 
 def printData():
