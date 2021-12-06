@@ -6,6 +6,7 @@ import sys
 import atexit
 import csv
 import time
+from datetime import datetime
 
 import serial
 from serial.tools.list_ports import comports
@@ -56,10 +57,10 @@ def printAscii(Ser):
         sys.stdout.write(string_data)
         strLine += string_data
         if string_data == '\n':
-            strLine = str(strLine + ' UNIX_Time:' + str(time.time()))
+            strLine = str(strLine + ' UNIX_Time:' + str(datetime.now()))
             # sys.stdout.write(strLine)  # 改行コードまでの文字列
             strLine = strLine.replace(':', ',').replace(
-                ' ', ',').replace('\r', '').replace('\n', '')
+                ' ', ',').replace('\t', ',').replace('\r', '').replace('\n', '')
             dataList = strLine.split(',')
             # print(dataList) #リスト化されたやつ
             addCSV(dataList)
